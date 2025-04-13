@@ -1,0 +1,17 @@
+{
+    "params":
+    {
+     "local_server": "True",
+      "local_uri": "mysql://root:@localhost/medical",
+      "proud_uri": "mysql://root:@localhost/medical",
+      "fb_url":"https://mdabdulwaliportfolio.netlify.app/",
+        "tw_url":"https://mdabdulwaliportfolio.netlify.app/",
+        "gh_url":"https://github.com/heyy-riyan",
+      "blog_name": "WELCOME",
+      "headname": "MEDICAL SUPPLY MANAGEMENT",
+      "user": "test",
+      "password": "test",
+      "login_image": "aple.jpg"
+  
+    }
+  }
