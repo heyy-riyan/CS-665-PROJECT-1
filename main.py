@@ -21,6 +21,7 @@ else:
 
 db = SQLAlchemy(app)
 
+
 class Medicines(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     amount = db.Column(db.Integer, nullable=False)
@@ -52,6 +53,8 @@ class Logs(db.Model):
     mid = db.Column(db.String, nullable=True)
     action = db.Column(db.String(30), nullable=False)
     date = db.Column(db.String(100), nullable=False)
+
+
 
 @app.route("/")
 def hello():
