@@ -195,3 +195,104 @@ def logout():
     flash("You are logout", "primary")
 
     return redirect('/login')
+
+
+@app.route("/login",methods=['GET','POST'])
+def login():
+
+    if ('user' in session and session['user'] == params['user']):
+        posts = Posts.query.all()
+        return render_template('dashbord.html',params=params,posts=posts)
+
+    if request.method=='POST':
+
+        username=request.form.get('uname')
+        userpass=request.form.get('password')
+        if(username==params['user'] and userpass==params['password']):
+
+            session['user']=username
+            posts=Posts.query.all()
+            flash("You are Logged in", "primary")
+
+            return render_template('index.html',params=params,posts=posts)
+        else:
+            flash("wrong password", "danger")
+
+    return render_template('login.html', params=params)
+
+
+@app.route("/edit/<string:mid>",methods=['GET','POST'])
+
+def edit(mid):
+    if('user' in session and session['user']==params['user']):
+        if request.method =='POST':
+            medical_name=request.form.get('medical_name')
+            owner_name=request.form.get('owner_name')
+            phone_no=request.form.get('phone_no')
+            address=request.form.get('address')
+
+
+            if mid==0:
+                posts=Posts(medical_name=medical_name,owner_name=owner_name,phone_no=phone_no,address=address)
+
+                db.session.add(posts)
+                db.session.commit()
+            else:
+                post=Posts.query.filter_by(mid=mid).first()
+                post.medical_name=medical_name
+                post.owner_name=owner_name
+                post.phone_no=phone_no
+                post.address=address
+                db.session.commit()
+                flash("data updated ", "success")
+
+                return redirect('/edit/'+mid)
+        post = Posts.query.filter_by(mid=mid).first()
+        return render_template('edit.html',params=params,post=post)
+
+
+#         if user is logged in
+#delete
+
+@app.route("/delete/<string:mid>", methods=['GET', 'POST'])
+def delete(mid):
+    if ('user' in session and session['user']==params['user']):
+        post=Posts.query.filter_by(mid=mid).first()
+        db.session.delete(post)
+        db.session.commit()
+        flash("Deleted Successfully", "warning")
+
+    return redirect('/login')
+
+@app.route("/deletemp/<string:id>", methods=['GET', 'POST'])
+def deletemp(id):
+    if ('user' in session and session['user']==params['user']):
+        post=Medicines.query.filter_by(id=id).first()
+        db.session.delete(post)
+        db.session.commit()
+        flash("Deleted Successfully", "primary")
+
+    return redirect('/list')
+
+
+@app.route("/medicines", methods = ['GET','POST'])
+def medicine():
+    if(request.method=='POST'):
+        '''ADD ENTRY TO THE DATABASE'''
+        mid=request.form.get('mid')
+        name=request.form.get('name')
+        medicines=request.form.get('medicines')
+        products=request.form.get('products')
+        email=request.form.get('email')
+        amount=request.form.get('amount')
+
+        entry=Medicines(mid=mid,name=name,medicines=medicines,products=products,email=email,amount=amount)
+        db.session.add(entry)
+        db.session.commit()
+        flash("Data Added Successfully","primary")
+
+
+    return render_template('medicine.html',params=params)
+
+
+app.run(debug=True)
