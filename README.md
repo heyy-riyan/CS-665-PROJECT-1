@@ -65,6 +65,25 @@ The demo video includes:
 - 📱 Mobile-friendly interface
 - 👥 Role-based access control (admin, staff)
 
+## ⚙️ Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/heyy-riyan/CS-665-PROJECT-1
+   cd pharma-sync
+2. Set Up a Virtual ENV:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+  # For Windows: venv\Scripts\
+3. Install Dependencies:
+   ```bash
+   pip install -r requirements.txt
+4. Run the app:
+   ```bash
+   python app.py
+
+
 ---
 
 ## 👨‍💻 Author
