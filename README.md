@@ -74,8 +74,7 @@ The demo video includes:
 2. Set Up a Virtual ENV:
    ```bash
    python -m venv venv
-   source venv/bin/activate
-  # For Windows: venv\Scripts\
+   source venv/bin/activate  # For Windows: venv\Scripts\
 3. Install Dependencies:
    ```bash
    pip install -r requirements.txt
