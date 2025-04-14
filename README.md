@@ -6,7 +6,7 @@ Pharma-Sync is a Pharmacy Supply Management System designed to streamline invent
 
 Targeted at offline pharmacies and small medical outlets, the application reduces manual paperwork, prevents data redundancy, and speeds up data retrieval through a MySQL-backed relational database.
 
-The backend is built with Python (Flask) and SQLAlchemy, while the GUI leverages HTML, CSS, JavaScript, and Bootstrap. The system is hosted locally using AMPPS and runs seamlessly on Windows.
+The backend is built with Python (Flask) and SQLAlchemy, while the GUI leverages HTML, CSS, JavaScript, and Bootstrap. The system is hosted locally using XAMPP and runs seamlessly on Windows.
 
 ---
 
@@ -18,16 +18,16 @@ The backend is built with Python (Flask) and SQLAlchemy, while the GUI leverages
 - **ORM Tool:** SQLAlchemy  
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap  
 - **Database Tools:** MySQL Workbench  
-- **IDE/Editors:** PyCharm, Sublime Text  
-- **Local Server:** AMPPS (v3.8)  
+- **IDE/Editors:** VsCode  
+- **Local Server:** XAMPP (v3.8)  
 - **Operating System:** Windows 11  
 
 ---
 
 ## 🔗 Links
 
-- **GitHub Repository:** _Your GitHub Link Here_  
-- **Demo Video (YouTube):** _Watch on YouTube_
+- **GitHub Repository:** "https://github.com/heyy-riyan/CS-665-PROJECT-1" 
+- **Demo Video (YouTube):** 
 
 ---
 
