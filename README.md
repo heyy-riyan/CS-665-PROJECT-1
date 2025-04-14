@@ -1,63 +1,78 @@
 # 💊 Pharma-Sync: Pharmacy Supply Management System
 
-Pharma-Sync is an efficient, secure, and user-friendly offline pharmacy supply management system. It is designed to streamline inventory, automate record-keeping, and minimize operational inefficiencies within small to medium-sized pharmacies.
+## Project Description
 
-## 📌 Table of Contents
+Pharma-Sync is a Pharmacy Supply Management System designed to streamline inventory tracking, order logging, and pharmacy operations using a user-friendly graphical interface. The system supports secure CRUD operations for managing medicines, suppliers, pharmacy details, and activity logs.
 
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Database Schema](#database-schema)
-- [Screenshots](#screenshots)
-- [Challenges Faced](#challenges-faced)
-- [Future Enhancements](#future-enhancements)
-- [License](#license)
-- [Author](#author)
+Targeted at offline pharmacies and small medical outlets, the application reduces manual paperwork, prevents data redundancy, and speeds up data retrieval through a MySQL-backed relational database.
+
+The backend is built with Python (Flask) and SQLAlchemy, while the GUI leverages HTML, CSS, JavaScript, and Bootstrap. The system is hosted locally using AMPPS and runs seamlessly on Windows.
 
 ---
 
-## ✅ Features
+## 🧰 Tech Stack
 
-- Login authentication system for data security.
-- Add, update, delete pharmacy and medicine records.
-- Log tracking with automatic timestamping.
-- Responsive UI built with Bootstrap.
-- Triggers and stored procedures for real-time logs.
-- Alerts & confirmation messages for safer interactions.
-
----
-
-## 🛠 Tech Stack
-
-**Frontend**
-
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
-
-**Backend**
-
-- Python (Flask)
-- SQLAlchemy
-
-**Database**
-
-- MySQL
-
-**Tools Used**
-
-- PyCharm Community Edition
-- Sublime Text
-- XAMPP (v3.8)
-- Windows OS
+- **Database Software:** MySQL  
+- **Programming Language:** Python 3.7  
+- **Web Framework:** Flask  
+- **ORM Tool:** SQLAlchemy  
+- **Frontend:** HTML, CSS, JavaScript, Bootstrap  
+- **Database Tools:** MySQL Workbench  
+- **IDE/Editors:** PyCharm, Sublime Text  
+- **Local Server:** AMPPS (v3.8)  
+- **Operating System:** Windows 11  
 
 ---
 
-## ⚙️ Installation
+## 🔗 Links
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/heyy-riyan/CS-665-PROJECT-1.git
-   ```
+- **GitHub Repository:** _Your GitHub Link Here_  
+- **Demo Video (YouTube):** _Watch on YouTube_
+
+---
+
+## 🎥 Demo Walkthrough
+
+The demo video includes:
+
+- Overview of the ER Diagram and database schema
+- Walkthrough of CRUD operations:
+  - Adding pharmacy records and medicine details
+  - Updating or deleting posts
+  - Logging actions with triggers
+- Secure login functionality using session and flash messages
+- Search functionality by product or medicine ID
+- Auto-generated logs on insert and delete operations
+- Dashboard and responsive forms built using Bootstrap
+
+---
+
+## 🧪 Key Features
+
+- 🗃️ Relational database with 3NF normalization
+- 🔐 Login/password-based user authentication
+- ⚙️ Trigger-based audit logs (insert/delete)
+- 🔄 Stored procedures for predefined queries
+- 📦 Secure and structured medicine inventory system
+- 📊 Simple and intuitive GUI for pharmacy staff
+
+---
+
+## 🚀 Future Enhancements
+
+- 💸 Online payment integration
+- 🚚 Medicine transportation tracking
+- 📱 Mobile-friendly interface
+- 👥 Role-based access control (admin, staff)
+
+---
+
+## 👨‍💻 Author
+
+**Mohammed Abdul Wali Farooqui**  
+CS-665 Introduction to Database Systems  
+Professor: Dr. Huabo Lu  
+Spring 2025 | Wichita State University
+
+---
+
