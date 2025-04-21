@@ -27,7 +27,7 @@ The backend is built with Python (Flask) and SQLAlchemy, while the GUI leverages
 ## 🔗 Links
 
 - **GitHub Repository:** "https://github.com/heyy-riyan/CS-665-PROJECT-1" 
-- **Demo Video (YouTube):** 
+- **Demo Video (YouTube):** "https://youtu.be/P_G5XpogdPo"
 
 ---
 
